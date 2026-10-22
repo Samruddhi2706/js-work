@@ -37,4 +37,34 @@ const myFunction = function(){
 console.log(typeof heros) //object
 console.log(typeof myObj) //object
 console.log(typeof myFunction) //function
-    
+
+
+
+
+
+
+
+// *************MEMORY *****************
+
+//Stack (primitive), Heap(Non-primitive)
+
+
+let MyYoutubechannel = "Samruddhi's channel" // stored in stack
+
+let anothername = MyYoutubechannel // stored in stack
+anothername = "NewChannelName"
+
+console.log(MyYoutubechannel)
+console.log(anothername)
+
+let userOne = {
+    email: "sam@gmail.com",
+    upi: "sam@upi"
+}
+
+let userTwo = userOne // stored in heap
+
+userTwo.email = "Sai@gmail.com"
+
+console.log(userTwo.email)
+console.log(userOne.email)
